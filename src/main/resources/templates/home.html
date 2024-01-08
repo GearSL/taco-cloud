@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Taco Cloud</title> </head>
-<body>
-    <h1>Welcome to...!</h1>
-    <img th:src="@{/images/TacoCloud.jpeg}"/>
-</body> </html>
+    <head>
+        <title>Taco Cloud</title>
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.2/css/bootstrap.min.css}">
+    </head>
+    <body>
+        <script th:src="@{/webjars/bootstrap/5.3.2/js/bootstrap.bundle.min.js}"></script>
+        <h1>Welcome to taco cloud!</h1>
+        <a class="btn btn-primary" th:href="@{/design}" id="another">Design your taco</a><br/>
+        <img class="rounded mx-auto d-block" th:src="@{/images/TacoCloud.jpeg}"/>
+    </body>
+</html>
